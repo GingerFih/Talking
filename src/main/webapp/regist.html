@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>校园贴吧注册</title>
+    <link rel="stylesheet" href="sources/css/mystyle.css" />
+    <link rel="stylesheet" href="sources/layui/css/layui.css">
+    <script src="sources/layui/layui.js" charset="utf-8"></script>
+    <link rel="icon" href="../sources/images/论坛.png" type="image/x-icon">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="sources/js/jquery.js"></script>
+
+</head>
+<body>
+<div class="box">
+    <h2>校园贴吧注册</h2>
+    <form>
+        <div class="inputBox">
+            <input type="text" class="account" id="account" placeholder="请输入你的学号 ">
+        </div>
+        <div class="inputBox">
+            <input type="password" class="password" id="pwd" placeholder="请输入您的密码" >
+        </div>
+        <div class="inputBox">
+            <input type="password" class="password" id="pwd1" placeholder="确认密码" onkeyup="validate()" ><span id="tishi"></span>
+        </div>
+<!--        <div class="inputBox">-->
+<!--            <input type="text" class="sex" id="sex" placeholder="性别" >-->
+<!--        </div>-->
+
+        <input type="radio" name="gender" value="男" checked class="sex" /><span style="color: #fff9ec">男</span> &nbsp&nbsp&nbsp
+        <!-- “&nbsp&nbsp&nbsp”3个“&nbsp”表示一个空格 -->
+        <input type="radio" name="gender" value="女" class="sex"/><span style="color: #fff9ec">女</span>
+
+        <div class="inputBox">
+            <input type="text" class="phone" id="phone" placeholder="手机号" >
+        </div>
+        <div class="inputBox" style="display: inline-flex">
+            <input type="text"  class="verification" id="verification" placeholder="验证码" >
+            <input  type="button" class="bt2" value="发送验证码" onclick="sendverCode()"/>
+        </div>
+
+        <div class="btn1">
+            <input type="button" class="btn" value="注册" onclick="get()">
+
+        </div>
+    </form>
+</div>
+</body>
+<script>
+    function sendverCode() {
+        var phone = $("#phone").val();
+        console.log(phone)
+        $.ajax({
+            url:"/Talking/vcode/sendvcode",
+            data: {"phone":phone},
+            type:"get",
+            success:function (data) {
+                console.log(data);
+                alert("验证码发送成功");
+            }
+        })
+    }
+    function validate() {
+        var pwd = $("#pwd").val();
+        var pwd1 = $("#pwd1").val();
+        <!-- 对比两次输入的密码 -->
+        if(pwd == pwd1&&pwd!="")
+        {
+            $("#tishi").html("√");
+            $("#tishi").css("color","green");
+            $("#xiugai").removeAttr("disabled");
+        }
+        else {
+            $("#tishi").html("两次密码不相同");
+            $("#tishi").css("color","red")
+            $("button").attr("disabled","disabled");
+        }
+    }
+    function get(){
+        console.log("-----");
+        var age= 0;
+        var imgurl="../sources/images/cainiao.png";
+        var signature="这个人很神秘,什么也没留下";
+        var username="菜鸟新手";
+        var account = $("#account").val();
+        var password = $("#pwd").val();
+        var phone = $("#phone").val();
+        var sex = $(".sex").val();
+        var verification=$("#verification").val();
+        console.log(account);
+        $.ajax({
+            url:"/Talking/vcode/comperCode",
+            type:"post",
+            data:{"phone":phone,"textCode":verification},
+            success:function (data) {
+                console.log(data)
+                if(data==1){
+                    $.ajax({
+                        url:"/Talking/login/insert",
+                        data:{"account":account,"password":password,"sex":sex,"phone":phone,"imgurl":imgurl,"age":age,"imgurl":imgurl,"signature":signature},
+                        method:"get",
+                        dataType: 'json',
+                        async:false,
+                        success:function (data) {
+                            console.log(data)
+                            if(data.code == 0) {
+                                alert("注册成功");
+                                window.location.href = "index.html";
+                            }else{
+                                alert("你注册失败")
+                            }
+
+                        }
+
+                    })
+                }else if(data==0){
+                    alert("验证码已超时")
+                }else{
+                    alert("验证码错误！！")
+                }
+            }
+        })
+
+
+    }
+</script>
+</html>

@@ -1,0 +1,109 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>校园贴吧登录</title>
+    <link rel="stylesheet" href="sources/css/mystyle.css" />
+    <link rel="icon" href="sources/images/论坛.png" type="image/x-icon">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="sources/js/jquery.params.js"></script>
+    <script src="sources/js/jquery.cookie.js"></script>
+</head>
+
+<body>
+<div class="box">
+    <h2>校园贴吧登录页面</h2>
+    <form>
+        <div class="inputBox">
+            <input type="text" class="account" id="account" placeholder="请输入您的账号 ">
+        </div>
+        <div class="inputBox"><br><br>
+            <input type="password" class="password" id="password" placeholder="请输入您的密码" >
+        </div>
+        <div class="inputBox" ><br><br>
+           <input type="text" name="vCode" id="vcode" placeholder="请输入验证码"><br>
+            <img style="height: 34px;" id="codeImg"
+                 onclick="this.src='login/checkCode?'+Math.random()"
+                 alt="点击更换" title="点击更换" src="login/checkCode" />
+        </div>
+        <br><br>
+        <div>
+            <input type="button" class="btn" value="登陆" onclick="get()">
+            <input type="button" class="btn" value="去注册" onclick="toregist()">
+            <input type="button" class="btn" value="忘记密码" onclick="toforget()">
+        </div>
+    </form>
+</div>
+</body>
+<script>
+    $(function () {
+        var sessionid=$.cookie("sessionid");
+        console.log(sessionid)
+    })
+    function toforget() {
+        window.location.href="forget.html"
+    }
+    function toregist() {
+        window.location.href="regist.html"
+    }
+    function get(){
+        console.log("-----");
+
+        var account = $("#account").val();
+        var password = $("#password").val();
+        var vcode = $("#vcode").val();
+        if(account ==null||account==''){
+            alert("账户不能为空")
+        }else if(password ==null||password==''){
+            alert("密码不能为空")
+        }else if(vcode ==null||vcode ==''){
+            alert("验证码不能为空")
+        }
+
+        $.ajax({
+            url:"/Talking/login/findUser",
+            data:{"account":account},
+            type:"get",
+            success:function (data) {
+                 console.log(data);
+                 var username=data[0].username;
+                $.ajax({
+                    url:"/Talking/login/login?inputStr="+vcode,
+                    data:{"account":account,"password":password},
+                    method:"get",
+                    dataType: 'json',
+                    async:false,
+                    success:function (data) {
+                        console.log(data)
+                        if(data.code == 200) {
+                            $.cookie("account",account,{expires:7,path:"/"});
+                            window.location.href = "html/back.html?username="+username;
+                        }else if(data.code==999){
+                            alert("你输入的密码好像不对")
+                        }else{
+                            alert("验证码输入错了")
+                        }
+
+                    },
+                    xhrFields: {
+                        withCredentials: true
+                    }
+
+                })
+            }
+        })
+
+
+
+        // function setCookie(name,val,min){
+        //     var now=new Date();
+        //     //设置时间
+        //     now.setMinutes(now.getMinutes()+min)
+        //
+        //     //设置Cookie
+        //     document.cookie=name+'='+val+';expires='+now.toUTCString()
+        // }
+
+
+    }
+</script>
+</html>

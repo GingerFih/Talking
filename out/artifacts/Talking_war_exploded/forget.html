@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>忘记密码了吧</title>
+    <link rel="icon" href="sources/images/论坛.png" type="image/x-icon">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="sources/js/jquery.js"></script>
+    <script src="sources/js/common.js"></script>
+    <link rel="stylesheet" href="sources/css/mystyle.css" />
+
+</head>
+<body>
+<div class="box">
+    <h2>忘记密码2</h2>
+    <form>
+        <div class="inputBox">
+            <input type="text" class="account" id="account" placeholder="请输入账号 ">
+        </div>
+        <div class="inputBox">
+            <input type="text" class="phone" id="phone" placeholder="请输入手机号" >
+        </div>
+        <div class="inputBox" style="display: inline-flex">
+            <input type="text"  class="verification" id="verification" placeholder="验证码" >
+            <input  type="button" class="bt2" value="发送验证码" onclick="sendverCode()"/>
+        </div>
+        <div class="inputBox">
+            <input type="text" class="password" id="password" placeholder="请输入您要更改的密码" >
+        </div>
+        <div class="inputBox">
+            <input type="text" class="password"  placeholder="请确认您要更改的密码" >
+        </div>
+
+
+
+        <div class="btn1">
+            <input type="button" class="btn" value="确认" onclick="get()">
+
+        </div>
+    </form>
+</div>
+</body>
+<script>
+    function sendverCode() {
+
+        var phone = $("#phone").val();
+        console.log(phone)
+        if (phone==''||phone==null){
+            alert("手机号不能为空")
+        }else{
+            let url="/Talking/vcode/sendvcode";
+            let data={"phone":phone};
+            AJAX.get(url,data,function (data) {
+                console.log(data);
+                alert("验证码发送成功");
+            })
+        }
+
+    }
+
+    function get() {
+        console.log("-----");
+        var verification = $("#verification").val();
+        var password = $("#password").val();
+        var account = $("#account").val();
+        var phone = $("#phone").val();
+        let url2 = "/Talking/vcode/comperCode";
+        let data2 = {
+            "phone": phone,
+            "textCode": verification
+        };
+        AJAX.get(url2, data2, function (data) {
+            if(data==1){
+                console.log(phone)
+                let url = "/Talking/login/findF";
+                let data4 = {"phone": phone, "account": account};
+                AJAX.get(url, data4, function (data) {
+
+                    console.log(data);
+                    let url1 = "/Talking/login/update";
+                    let data1 = {"account": account, "password": password};
+                    if (data.code == 200) {
+                        AJAX.get(url1, data1, function (data) {
+                            console.log(data)
+                            if (data.code == 0) {
+                                alert("找回成功");
+                                window.location.href = "index.html";
+                            } else {
+                                alert("你找回失败")
+                            }
+                        })
+                    } else {
+                        alert("你输入的手机号和用户名不匹配")
+                    }
+                })
+            } else if(data==0){
+                alert("验证码已超时")
+            }else{
+                alert("验证码错误！！")
+            }
+        })
+    }
+</script>
+
+</html>
