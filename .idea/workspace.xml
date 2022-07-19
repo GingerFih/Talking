@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f942ee8d-c2fd-4b76-8169-4093841381ed" name="Changes" comment="">
+    <list default="true" id="f942ee8d-c2fd-4b76-8169-4093841381ed" name="Changes" comment="Merge branch 'master' of https://gitee.com/bald-rookie11/soaring-7&#10;&#10;# Conflicts:&#10;#&#9;.idea/artifacts/Talking_war.xml&#10;#&#9;.idea/artifacts/Talking_war_exploded.xml&#10;#&#9;.idea/jarRepositories.xml&#10;#&#9;.idea/vcs.xml&#10;#&#9;out/artifacts/Talking_war_exploded/html/back.html&#10;#&#9;src/main/webapp/html/back.html&#10;#&#9;src/main/webapp/html/chat.html&#10;#&#9;src/main/webapp/html/java_reply.html&#10;#&#9;src/main/webapp/index.html&#10;#&#9;target/ssm/META-INF/MANIFEST.MF">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a.txt" afterDir="false" />
     </list>
@@ -31,13 +31,22 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2CAA95pHSKoDGwDttAADqPvNAvW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
@@ -148,6 +157,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658234860384</updated>
+      <workItem from="1658240442276" duration="293000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1658238546543</created>
@@ -159,8 +169,23 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="Merge branch 'master' of https://gitee.com/bald-rookie11/soaring-7&#10;&#10;# Conflicts:&#10;#&#9;.idea/artifacts/Talking_war.xml&#10;#&#9;.idea/artifacts/Talking_war_exploded.xml&#10;#&#9;.idea/jarRepositories.xml&#10;#&#9;.idea/vcs.xml&#10;#&#9;out/artifacts/Talking_war_exploded/html/back.html&#10;#&#9;src/main/webapp/html/back.html&#10;#&#9;src/main/webapp/html/chat.html&#10;#&#9;src/main/webapp/html/java_reply.html&#10;#&#9;src/main/webapp/index.html&#10;#&#9;target/ssm/META-INF/MANIFEST.MF" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://gitee.com/bald-rookie11/soaring-7&#10;&#10;# Conflicts:&#10;#&#9;.idea/artifacts/Talking_war.xml&#10;#&#9;.idea/artifacts/Talking_war_exploded.xml&#10;#&#9;.idea/jarRepositories.xml&#10;#&#9;.idea/vcs.xml&#10;#&#9;out/artifacts/Talking_war_exploded/html/back.html&#10;#&#9;src/main/webapp/html/back.html&#10;#&#9;src/main/webapp/html/chat.html&#10;#&#9;src/main/webapp/html/java_reply.html&#10;#&#9;src/main/webapp/index.html&#10;#&#9;target/ssm/META-INF/MANIFEST.MF" />
   </component>
 </project>
