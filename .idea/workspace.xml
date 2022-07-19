@@ -9,8 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f942ee8d-c2fd-4b76-8169-4093841381ed" name="Changes" comment="Merge branch 'master' of https://gitee.com/bald-rookie11/soaring-7&#10;&#10;# Conflicts:&#10;#&#9;.idea/artifacts/Talking_war.xml&#10;#&#9;.idea/artifacts/Talking_war_exploded.xml&#10;#&#9;.idea/jarRepositories.xml&#10;#&#9;.idea/vcs.xml&#10;#&#9;out/artifacts/Talking_war_exploded/html/back.html&#10;#&#9;src/main/webapp/html/back.html&#10;#&#9;src/main/webapp/html/chat.html&#10;#&#9;src/main/webapp/html/java_reply.html&#10;#&#9;src/main/webapp/index.html&#10;#&#9;target/ssm/META-INF/MANIFEST.MF">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f942ee8d-c2fd-4b76-8169-4093841381ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +156,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658234860384</updated>
-      <workItem from="1658240442276" duration="293000" />
+      <workItem from="1658240442276" duration="655000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1658238546543</created>
@@ -166,7 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658238546543</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge branch 'master' of https://gitee.com/bald-rookie11/soaring-7&#10;&#10;# Conflicts:&#10;#&#9;.idea/artifacts/Talking_war.xml&#10;#&#9;.idea/artifacts/Talking_war_exploded.xml&#10;#&#9;.idea/jarRepositories.xml&#10;#&#9;.idea/vcs.xml&#10;#&#9;out/artifacts/Talking_war_exploded/html/back.html&#10;#&#9;src/main/webapp/html/back.html&#10;#&#9;src/main/webapp/html/chat.html&#10;#&#9;src/main/webapp/html/java_reply.html&#10;#&#9;src/main/webapp/index.html&#10;#&#9;target/ssm/META-INF/MANIFEST.MF">
+      <created>1658240742501</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658240742501</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Merge branch 'master' of https://gitee.com/bald-rookie11/soaring-7&#10;&#10;# Conflicts:&#10;#&#9;.idea/artifacts/Talking_war.xml&#10;#&#9;.idea/artifacts/Talking_war_exploded.xml&#10;#&#9;.idea/jarRepositories.xml&#10;#&#9;.idea/vcs.xml&#10;#&#9;out/artifacts/Talking_war_exploded/html/back.html&#10;#&#9;src/main/webapp/html/back.html&#10;#&#9;src/main/webapp/html/chat.html&#10;#&#9;src/main/webapp/html/java_reply.html&#10;#&#9;src/main/webapp/index.html&#10;#&#9;target/ssm/META-INF/MANIFEST.MF">
+      <created>1658240850564</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658240850564</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
