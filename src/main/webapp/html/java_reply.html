@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../sources/css/reply.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../sources/layui/layui.js" charset="utf-8"></script>
+    <script src="../sources/js/jquery.cookie.js"></script>
+    <script src="../sources/js/jquery.params.js"></script>
+    <title></title>
+
+</head>
+<body class="body">
+<div  class="top">
+    <input type="button" class="btn" value="新话题" onclick="gosend()">
+    <input type="text"  id="reply">
+    <input type="button" class="btn2" value="快捷回复" onclick="hf()">
+</div>
+<div id="inf"></div>
+</body>
+<script>
+    function gosend() {
+        window.location.href="sendtitle.html"
+    }
+    get();
+    var lowceng= 0;
+    function get(){
+        $.ajax({
+            type:"get",
+            url:"/Talking/Reply/findAll",
+            success:function(data){
+                console.log(data);
+                var html='';
+                var name = $.query.get("name");
+                for(var i=0;i<data.length;i++){
+
+                    let tm = new Date(data[i].postime);
+                    oYear = tm.getFullYear(), //年
+                        oMonth = tm.getMonth() + 1, //月
+                        oDay = tm.getDate(), //日
+                        h = tm.getHours(), //小时
+                        m = tm.getMinutes(), //分钟
+                        s = tm.getSeconds(); //秒数
+                    var fatime = oYear + '-' + getZero(oMonth) + '-' + getZero(oDay) + ' ' + getZero(h) + ':' + getZero(m) + ':' + getZero(s);
+
+
+                    if(data[i].reply_account==null&&data[i].title==name) {
+                        html += '<div class="mid">';
+                        html += '<div class="left">';
+                        html += '<div class="toux2">' + "<img class='img' src='../sources/images/" + data[i].images + "' />" + '</div>';
+                        html += "<div class='name' id='你好"+[i]+"'>" + data[i].username + '</div>';
+                        html += '</div>';
+                        html += '<div class="right">';
+                        html += '<div class="content"  id="b'+[i]+'">' + data[i].content + '</div>';
+                        html += '<div class="time">';
+                        html += '<span>发布于：' + fatime + '</span>';
+                        html += '<span><img  src="../sources/images/like.png"><span id="like'+[i]+'">'+data[i].likecount+'</span></span>';
+                        html += '</div>';
+                        html+='<div class="reply1">'
+                        for(var j=1;j<data.length;j++){
+                            if(data[j].reply_account==data[i].account&&data[j].title==name&&data[j].lowc_id==data[i].lowc_id){
+                                html += '<div class="reply">'+data[j].username+"评论说："+ data[j].content + '</div>';
+                            }
+                        }
+                        html+='</div>';
+                        html += '<div class="like">';
+                        html += '<input style="font-size: 15px;margin-left: 4px" type="button" class="likes" value="点赞" onclick="like('+i+','+data[i].id+')">';
+                        html += '<input style="font-size: 15px;margin-left: 4px" type="button" class="hold" value="关注" >';
+                        html += '</div>';
+                        html += '<div class="reply">';
+                        html += '<input type="text" class="'+[i]+'" id="f'+[i]+'">';
+                        html += '<input type="button"  id="'+[i]+'" value="发送" onclick="out('+i+','+lowceng+',\''+data[i].account+'\')">';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '</div>';
+
+                        lowceng++;
+                    }
+                }
+                html+='';
+                $("#inf").empty().append(html);
+            },
+            error:function(data){
+                console.log("请联系管理员")
+            }
+        });
+    }
+
+    function out(i,lowceng,reply_account){
+        var lowc_id=lowceng+1;
+        console.log(lowc_id);
+        var abc="f"+i;
+        var content = $("#f"+i).val();
+        var account = $.cookie("account");
+        var likecount = 0;
+        var ab =event.target.id;
+        var images = "aa.png";
+        var c = "你好"+ab;
+        var title = $.query.get("name");
+        console.log(title);
+
+        $.ajax({
+            url:"/Talking/Reply/insert",
+            data:{"content":content,"likecount":likecount,"account":account,"images":images,"reply_account":reply_account,"title":title,"lowc_id":lowc_id},
+            method:"get",
+            dataType: 'json',
+            async:false,
+            success:function(data){
+                console.log(data)
+                window.location. href="java_reply.html?name="+title;
+            },error:function(data){
+                console.log("发送失败")
+            }
+
+        })
+    }
+    // function out(){
+    //     var account = $(".account").val();
+    //     $.ajax({
+    //         type:"get",
+    //         url:"http://localhost:8080/Talking/Reply",
+    //         data:{
+    //             "account":account
+    //         },
+    //         success:function(data){
+    //             alert("成功了")
+    //         },error:function(){
+    //             alert("错了")
+    //         }
+    //
+    //     })
+    // }
+
+    function getZero(num) {
+        // 单数前面加0
+        if (parseInt(num) < 10) {
+            num = '0' + num;
+        }
+        return num;
+    }
+    function hf(){
+
+        var content = $("#reply").val();
+        var lowc_id = lowceng+1;
+        var images = "aa.png";
+        var account = $.cookie("account");
+        var title = $.query.get("name");
+        var likecount = 0;
+        $.ajax({
+            url:"/Talking/Reply/Reply",
+            data:{"content":content,"lowc_id":lowc_id,"images":images,"account":account,"title":title,"likecount":likecount},
+            method:"get",
+            dataType: 'json',
+            async:false,
+            success:function (data) {
+                console.log(data)
+                if(data.code == 0) {
+                    alert("发布成功");
+                    window.location. href="java_reply.html?name="+title;
+                }else{
+                    alert("你注册失败")
+                }
+
+            }
+
+        })
+
+    }
+
+
+    function like(i,id) {
+        var title = $.query.get("name");
+            var abc= "like"+i;
+        var likecount = document.getElementById(abc).innerText;
+        likecount++;
+        console.log(likecount);
+        var id = id;
+        $.ajax({
+            url:"/Talking/Reply/update",
+            data:{"likecount":likecount,"id":id},
+            method:"get",
+            dataType: 'json',
+            async:false,
+            success:function (data) {
+                console.log(data)
+                if(data.code == 0) {
+                    window.location. href="java_reply.html?name="+title;
+                }else{
+                    alert("你找回失败")
+                }
+
+            }
+
+        })
+
+    }
+</script>
+</html>

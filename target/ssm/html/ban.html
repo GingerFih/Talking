@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>黑名单</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../sources/js/jquery.cookie.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        /* 头部样式 */
+        .header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* 创建四个相等的列 */
+        .column {
+            float: left;
+            width: 25%;
+            text-align: center;
+        }
+
+        .row{
+            height:70%
+        }
+        /* 列后清除浮动 */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>黑名单列表</h1>
+</div>
+
+    <div id="inf">
+
+    </div>
+
+
+</body>
+<script>
+
+    function getZero(num) {
+        // 单数前面加0
+        if (parseInt(num) < 10) {
+            num = '0' + num;
+        }
+        return num;
+    }
+    $(function () {
+        var account=$.cookie("account");
+        console.log(account);
+        $.ajax({
+            url:"/Talking/ban/findBan",
+            type:"get",
+            data:{"account":account},
+            success:function (data){
+                console.log(data)
+                var html='';
+                html+='<div class="row">';
+                html+='<div class="column">';
+                 html+='<h2>头像</h2>';
+                for (var i=0;i<data.length;i++){
+                    html+='<ul><img src="../sources/images/'+data[i].imgurl+'";width="22px"; height="22px";left:"60%";top:"23%"></ul>';
+                }
+                html+='</div>';
+
+                html+='<div class="column">';
+                html+='<h2>名字</h2>';
+                for (var i=0;i<data.length;i++){
+                    html+='<ul><span style="color: #87CEFA;">'+data[i].username+' </span></ul>';
+                }
+                html+='</div>';
+
+                html+='<div class="column">';
+                html+='<h2>拉黑时间</h2>';
+                for (var i=0;i<data.length;i++){
+                    let tm = new Date(data[i].bantime);
+                    oYear = tm.getFullYear(), //年
+                        oMonth = tm.getMonth() + 1, //月
+                        oDay = tm.getDate(), //日
+                        h = tm.getHours(), //小时
+                        m = tm.getMinutes(), //分钟
+                        s = tm.getSeconds(); //秒数
+                    var fatime = oYear + '-' + getZero(oMonth) + '-' + getZero(oDay) + ' ' + getZero(h) + ':' + getZero(m) + ':' + getZero(s);
+                    console.log(fatime);
+                    html+='<ul>'+fatime+'</ul>';
+                }
+                html+='</div>';
+
+                html+='<div class="column">';
+                html+='<h2>操作</h2>';
+                for (var i=0;i<data.length;i++){
+                    console.log(data[i].banid)
+                    html+='<ul><input type="submit" value="取消拉黑" onclick="del('+data[i].banid+')"/></ul>';
+                }
+                html+='</div>';
+
+                html+='</div>';
+              $("#inf").empty().append(html)
+            }
+        })
+    })
+    function del(banid) {
+        console.log(banid)
+        $.ajax({
+            url:"/Talking/ban/deleteBan",
+            type:"get",
+            data: {"banid":banid},
+            success:function (data){
+                console.log(data)
+                window.location.href="ban.html";
+            }
+        })
+    }
+</script>
+</html>
