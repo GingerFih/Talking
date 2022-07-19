@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qcby.dao.BanDao">
+    <select id="findBan" parameterType="com.qcby.entity.Ban" resultType="com.qcby.entity.Ban">
+        select t1.*,t2.username,t2.imgurl from ban t1 inner join Login t2 on t1.account_ban=t2.account where t1.account=#{account}
+    </select>
+    <delete id="deleteBan" parameterType="java.lang.Integer">
+        delete from ban where banid=#{banid}
+    </delete>
+
+</mapper>

@@ -1,7 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="war" name="Talking:war">
-    <output-path>$PROJECT_DIR$/out/artifacts/Talking_war</output-path>
-    <root id="archive" name="Talking_war.war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Talking</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ssm.war">
       <element id="artifact" artifact-name="Talking:war exploded" />
     </root>
   </artifact>

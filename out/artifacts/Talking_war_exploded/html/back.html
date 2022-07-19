@@ -113,11 +113,11 @@
 
     </div>
   </div>
-</div>
 
   <div class="layui-footer">
     <!-- 底部固定区域 -->
     底部固定区域
+  </div>
 </div>
 <script src="../sources/layui/layui.js"></script>
 <script>
@@ -129,6 +129,7 @@
   function loginout(){
     var account=$.cookie("account",999,{expires:0,path:"/"});
     console.log(account)
+    delCookie(account);
   }
 
 
