@@ -10,7 +10,283 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f942ee8d-c2fd-4b76-8169-4093841381ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/META-INF/Talking.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/SqlMapConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/controller/BanController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/controller/ChatController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/controller/EmotionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/controller/FanController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/controller/ReplyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/controller/SendverCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/dao/BanDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/dao/ChatDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/dao/ComprehensivelistDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/dao/EmotionDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/dao/FanDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/dao/LoginDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/dao/ReplyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/entity/Ban.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/entity/Chat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/entity/Comprehensivelist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/entity/Emotion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/entity/Fan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/entity/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/entity/Reply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/entity/Verification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/service/BanService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/service/ChatService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/service/ComprehensivelistService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/service/EmotionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/service/FanService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/service/LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/service/ReplyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/service/serviceImpl/BanServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/service/serviceImpl/ChatServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/service/serviceImpl/ComprehensivelistServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/service/serviceImpl/EmotionServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/service/serviceImpl/FanServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/service/serviceImpl/LoginServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/service/serviceImpl/ReplyServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/servlet/AttentionServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/servlet/BanServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/servlet/ChatServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/servlet/FanServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/servlet/GetAlgorithmPostServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/servlet/GetAssociationPostServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/servlet/GetPostgraduatePostServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/servlet/GetSportsPostServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/servlet/GetStudyPostServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/servlet/GeteMotionPostServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/servlet/JobServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/servlet/PersonalServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/servlet/StudyServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/servlet/TestServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/util/CookieUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/util/CreateVerificationCode$SecurityCodeLevel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/util/CreateVerificationCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/util/CreateVerificationCodeImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/util/HttpServletRequestUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/util/ImageUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/util/RandomValidateCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/util/SendSms.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/util/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/com/qcby/util/vpnServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/mapper/BanMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/mapper/ChatMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/mapper/EmotionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/mapper/FanMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/mapper/LoginMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/mapper/RelpyMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/classes/springmvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/aspectjweaver-1.6.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/attoparser-2.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/commons-codec-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/commons-httpclient-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/druid-1.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/filters-2.0.235-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/gson-2.2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/hutool-all-5.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/jackson-core-2.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/jackson-databind-2.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/jakarta.activation-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/jakarta.el-api-4.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/jakarta.servlet.jsp.jstl-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/jakarta.xml.bind-api-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/jaxb-api-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/jsqlparser-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/kaptcha-2.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/log4j-1.2.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/logging-interceptor-2.7.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/mybatis-3.4.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/mybatis-generator-core-1.3.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/mybatis-spring-1.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/okhttp-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/okio-1.12.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/pagehelper-5.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/slf4j-api-1.6.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/slf4j-log4j12-1.6.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/spring-aop-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/spring-beans-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/spring-context-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/spring-core-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/spring-expression-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/spring-jcl-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/spring-jdbc-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/spring-test-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/spring-tx-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/spring-web-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/spring-webmvc-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/tencentcloud-sdk-java-3.1.270.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/thymeleaf-3.0.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/thymeleaf-spring4-3.0.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/lib/unbescape-1.1.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/forget.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/Fan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/article.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/back.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/ban.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/chat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/concern.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/confessionwall.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/css.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/emotion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/firstshow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/java_reply.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/javascript.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/lovestory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/makefriend.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/mybatis.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/mysql.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/person.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/personal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/sendtitle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/html/tocao.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/regist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/css/mystyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/css/person.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/css/reply.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/css/table.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/images/aa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/images/aac.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/images/back.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/images/bb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/images/cainiao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/images/cc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/images/images1656661165332.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/images/like.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/images/login_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/images/login_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/images/qq.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/images/zan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/images/论坛.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/js/forget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/js/jquery.cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/js/jquery.params.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/js/person.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/css/layui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/css/layui.mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/css/modules/code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/css/modules/layer/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/css/modules/layer/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/font/iconfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/images/face/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/colorpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/flow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/layedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/laypage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/laytpl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/rate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/transfer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/lay/modules/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/layui.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Talking_war_exploded/sources/layui/layui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +320,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -59,8 +339,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 8.0.9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.9" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Talking/" />
+    <configuration name="Tomcat 8.5.57" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.57" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Talking:war exploded">
@@ -156,7 +435,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658234860384</updated>
-      <workItem from="1658240442276" duration="655000" />
+      <workItem from="1658240442276" duration="893000" />
+      <workItem from="1658278416511" duration="767000" />
+      <workItem from="1658401891526" duration="409000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1658238546543</created>
@@ -179,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658240850564</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Merge branch 'master' of https://gitee.com/bald-rookie11/soaring-7&#10;&#10;# Conflicts:&#10;#&#9;a.txt">
+      <created>1658241165119</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658241165119</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +487,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes" />
     <MESSAGE value="Merge branch 'master' of https://gitee.com/bald-rookie11/soaring-7&#10;&#10;# Conflicts:&#10;#&#9;.idea/artifacts/Talking_war.xml&#10;#&#9;.idea/artifacts/Talking_war_exploded.xml&#10;#&#9;.idea/jarRepositories.xml&#10;#&#9;.idea/vcs.xml&#10;#&#9;out/artifacts/Talking_war_exploded/html/back.html&#10;#&#9;src/main/webapp/html/back.html&#10;#&#9;src/main/webapp/html/chat.html&#10;#&#9;src/main/webapp/html/java_reply.html&#10;#&#9;src/main/webapp/index.html&#10;#&#9;target/ssm/META-INF/MANIFEST.MF" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://gitee.com/bald-rookie11/soaring-7&#10;&#10;# Conflicts:&#10;#&#9;.idea/artifacts/Talking_war.xml&#10;#&#9;.idea/artifacts/Talking_war_exploded.xml&#10;#&#9;.idea/jarRepositories.xml&#10;#&#9;.idea/vcs.xml&#10;#&#9;out/artifacts/Talking_war_exploded/html/back.html&#10;#&#9;src/main/webapp/html/back.html&#10;#&#9;src/main/webapp/html/chat.html&#10;#&#9;src/main/webapp/html/java_reply.html&#10;#&#9;src/main/webapp/index.html&#10;#&#9;target/ssm/META-INF/MANIFEST.MF" />
+    <MESSAGE value="Merge branch 'master' of https://gitee.com/bald-rookie11/soaring-7&#10;&#10;# Conflicts:&#10;#&#9;a.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://gitee.com/bald-rookie11/soaring-7&#10;&#10;# Conflicts:&#10;#&#9;a.txt" />
   </component>
 </project>
