@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f942ee8d-c2fd-4b76-8169-4093841381ed" name="Changes" comment="" />
+    <list default="true" id="f942ee8d-c2fd-4b76-8169-4093841381ed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,7 +161,7 @@
       <updated>1658234860384</updated>
       <workItem from="1658240442276" duration="893000" />
       <workItem from="1658278416511" duration="767000" />
-      <workItem from="1658401891526" duration="1192000" />
+      <workItem from="1658401891526" duration="4974000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1658238546543</created>
@@ -196,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658402316663</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge branch 'master' of https://gitee.com/bald-rookie11/soaring-7&#10;&#10;# Conflicts:&#10;#&#9;a.txt">
+      <created>1658403103697</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658403103697</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
