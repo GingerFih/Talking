@@ -75,7 +75,7 @@
                     success:function (data) {
                         console.log(data)
                         if(data.code == 200) {
-                            $.cookie("account",account,{expires:7,path:"/"});
+                           // $.cookie("account",account,{expires:7,path:"/"});
                             window.location.href = "html/back.html?username="+username;
                         }else if(data.code==999){
                             alert("你输入的密码好像不对")
