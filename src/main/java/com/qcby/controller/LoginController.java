@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -56,7 +57,10 @@ public class LoginController {
         if(random.equals(inputStr)){
             if(fage==true) {
                 json = "{\"code\":\"200\",\"message\":\"登录成功\"}";
-
+                Cookie cookie=new Cookie("account",account);
+                cookie.setPath("/Talking");
+                cookie.setMaxAge(60*60);
+                response.addCookie(cookie);
 
             }else{
                 json = "{\"code\":\"999\",\"message\":\"登录失败\"}";

@@ -11,6 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f942ee8d-c2fd-4b76-8169-4093841381ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qcby/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qcby/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +50,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -161,7 +164,9 @@
       <updated>1658234860384</updated>
       <workItem from="1658240442276" duration="893000" />
       <workItem from="1658278416511" duration="767000" />
-      <workItem from="1658401891526" duration="4974000" />
+      <workItem from="1658401891526" duration="5822000" />
+      <workItem from="1658452002035" duration="133000" />
+      <workItem from="1658920433695" duration="1281000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1658238546543</created>
@@ -205,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658403103697</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Merge branch 'master' of https://gitee.com/bald-rookie11/soaring-7&#10;&#10;# Conflicts:&#10;#&#9;a.txt">
+      <created>1658409642825</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658409642825</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
